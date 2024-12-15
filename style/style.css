@@ -1,0 +1,276 @@
+h1{
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 150;
+    font-size: 80px;
+    color: white;
+}
+
+h2{
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 150;
+    /* font-size: 80px; */
+    color: white;
+    font-weight: bold;
+    
+}
+h4 {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 150;
+    /* font-size: 80px; */
+    font-weight: bold;
+}
+h3{
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 150;
+    /* font-size: 80px; */
+    font-weight: bold;
+    color: #494747
+}
+
+p{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.services .icon {
+font-size: 40px;
+color: #007bff;
+}
+
+.testimonial {
+background-color: #f8f9fa;
+padding: 40px;
+border-radius: 5px;
+}
+
+.footer {
+background: #343a40;
+color: white;
+padding: 20px 0;
+text-align: center;
+}
+
+
+
+.intro {
+    background-color: #633030;
+    height: 100vh; /* Altura padrão para telas maiores */
+}
+
+.about {
+    background-color: #344a51;
+    height: 80vh; /* Altura padrão para telas maiores */
+}
+
+.pilar{
+    margin: 40PX 0;
+}
+
+.expert{
+    background-color: #344a51;
+    color: white;
+    padding: 10px 0 50px 0;
+}
+
+@media (max-width: 768px) {
+    .intro {
+        height: 400px; /* Altura menor para tablets e dispositivos médios */
+    }
+}
+
+@media (max-width: 576px) {
+    .intro {
+        height: 300px; /* Altura ainda menor para dispositivos móveis */
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        height: 400px; /* Altura menor para tablets e dispositivos médios */
+    }
+}
+
+@media (max-width: 576px) {
+    .about {
+        height: 300px; /* Altura ainda menor para dispositivos móveis */
+    }
+}
+
+
+.frst-photo {
+    background-image: url('../img/ANC00877.jpg');
+    background-size: cover; /* Garante que a imagem cubra toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    height: 100vh;
+}
+
+.scnd-photo {
+    background-image: url('../img/sobre.jpg');
+    background-size: cover; /* Garante que a imagem cubra toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    height: 80vh;
+}
+
+.text-block{
+    padding: 0 80px ;
+    color: white;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 150;
+    justify-content: center;
+}
+
+.text-about{
+    padding: 0 80px ;
+    color: white;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 150;
+    text-align: justify;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.default-btn {
+    border-width: 2px !important; /* Define a largura da borda */
+    border-style: solid; /* Adiciona estilo sólido para a borda */
+    border-color: white; /* Define a cor da borda */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px; /* Adiciona espaçamento interno */
+    display: inline-block; /* Garante que a largura da borda funcione corretamente */
+    background-color: transparent; /* Garante fundo transparente, se necessário */
+}
+
+.default-btn:hover {
+    border-width: 2px !important; /* Define a largura da borda */
+    border-style: solid; /* Adiciona estilo sólido para a borda */
+    border-color: white; /* Define a cor da borda */
+    color: #304863;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px; /* Adiciona espaçamento interno */
+    display: inline-block; /* Garante que a largura da borda funcione corretamente */
+    background-color: white; /* Garante fundo transparente, se necessário */
+}
+
+.pilares{
+    padding: 0 25px;
+}
+
+.col-md-4 p{
+    text-align: justify;
+}
+
+/* responsivo */
+
+.intro {
+    background-color: #633030;
+    height: 100vh; /* Altura padrão para desktops */
+    /* display: flex; */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.text-block {
+    padding: 0 80px;
+    color: white;
+    font-family: "Lexend Deca", sans-serif;
+    text-align: left; /* Alinhamento padrão */
+}
+
+/* Imagem no outro lado */
+.frst-photo {
+    background-image: url('../img/ANC00877.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/* Responsividade para Tablets */
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column; /* Coloca os elementos em coluna */
+        height: auto; /* Altura automática para se ajustar ao conteúdo */
+    }
+
+    .text-block {
+        padding: 20px; /* Reduz padding */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .frst-photo {
+        height: 300px; /* Altura menor para a foto */
+        width: 410px;
+    }
+}
+
+/* Responsividade para Smartphones */
+@media (max-width: 576px) {
+    .text-block {
+        padding: 10px; /* Ainda menos padding */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .frst-photo {
+        height: 200px; /* Altura ainda menor para smartphones */
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Diminui o tamanho da fonte do título */
+    }
+
+    p {
+        font-size: 1rem; /* Reduz o tamanho do parágrafo */
+    }
+
+    .default-btn {
+        font-size: 0.9rem; /* Ajusta o botão */
+        padding: 8px 16px;
+    }
+}
+
+
+/* Estilo base */
+
+/* Ajustes para Tablets */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column; /* Coloca os elementos em coluna */
+        height: auto; /* Altura automática para se ajustar ao conteúdo */
+    }
+
+    .scnd-photo {
+        height: 300px; /* Altura reduzida para tablets */
+    }
+
+    .text-about {
+        padding: 20px; /* Reduz o espaçamento lateral */
+        margin-top: 15px;
+    }
+}
+
+/* Ajustes para Smartphones */
+@media (max-width: 576px) {
+    .scnd-photo {
+        height: 200px; /* Altura menor para smartphones */
+        width: 410px;
+    }
+
+    .text-about {
+        padding: 10px; /* Reduz ainda mais o espaçamento lateral */
+        text-align: left; /* Texto alinhado à esquerda para melhor leitura */
+        font-size: 0.9rem; /* Reduz o tamanho da fonte */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Ajusta o tamanho do título */
+        text-align: center; /* Centraliza o título para smartphones */
+    }
+
+    p {
+        font-size: 0.85rem; /* Reduz o tamanho do parágrafo */
+    }
+}
+
