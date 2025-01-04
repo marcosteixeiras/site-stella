@@ -237,12 +237,14 @@ text-align: center;
         height: 400px; /* Altura ainda menor para smartphones */
     }
 
-    h1,h2,h3 {
-        font-size: 1.8rem; /* Diminui o tamanho da fonte do título */
+    h1, h2, h3 {
+        font-size: 2rem; /* Diminui o tamanho da fonte do título */
+        text-align: left;
     }
 
     p {
         font-size: 1rem; /* Reduz o tamanho do parágrafo */
+        text-align: left;
     }
 
     .default-btn {
@@ -292,9 +294,9 @@ text-align: center;
         font-size: 0.9rem; /* Reduz o tamanho da fonte */
     }
 
-    h2 {
-        font-size: 1.5rem; /* Ajusta o tamanho do título */
-        text-align: center; /* Centraliza o título para smartphones */
+    h2, h3 {
+        font-size: 2rem !important; /* Ajusta o tamanho do título */
+        text-align: left; /* Centraliza o título para smartphones */
     }
 
     p {
