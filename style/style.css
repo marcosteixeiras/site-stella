@@ -237,7 +237,7 @@ text-align: center;
         height: 400px; /* Altura ainda menor para smartphones */
     }
 
-    h1 {
+    h1,h2,h3 {
         font-size: 1.8rem; /* Diminui o tamanho da fonte do título */
     }
 
