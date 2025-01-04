@@ -153,24 +153,24 @@ text-align: center;
     border-width: 2px !important; /* Define a largura da borda */
     border-style: solid; /* Adiciona estilo sólido para a borda */
     border-color: white; /* Define a cor da borda */
-    color: white;
+    color: #633030;
     text-decoration: none;
     font-weight: bold;
     padding: 10px 20px; /* Adiciona espaçamento interno */
     display: inline-block; /* Garante que a largura da borda funcione corretamente */
-    background-color: transparent; /* Garante fundo transparente, se necessário */
+    background-color: white; /* Garante fundo transparente, se necessário */
 }
 
 .default-btn:hover {
     border-width: 2px !important; /* Define a largura da borda */
     border-style: solid; /* Adiciona estilo sólido para a borda */
     border-color: white; /* Define a cor da borda */
-    color: #304863;
+    color: white;
     text-decoration: none;
     font-weight: bold;
     padding: 10px 20px; /* Adiciona espaçamento interno */
     display: inline-block; /* Garante que a largura da borda funcione corretamente */
-    background-color: white; /* Garante fundo transparente, se necessário */
+    background-color: #633030; /* Garante fundo transparente, se necessário */
 }
 
 .pilares{
