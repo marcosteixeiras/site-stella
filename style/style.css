@@ -100,7 +100,7 @@ text-align: center;
 }
 
 .duvidas {
-    background-color: #ffffc7;;
+    background-color: #954b17;;
     /* height: 80vh; Altura padrão para telas maiores */
     width: 100%;
 }
@@ -384,7 +384,7 @@ padding: 15px;
     background-color: white; /* Fundo branco */
     border-radius: 8px; /* Bordas arredondadas */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
-    padding: 15px 15px; /* Reduzido o padding */
+    padding: 35px 15px; /* Reduzido o padding */
     width: 50%; /* Largura reduzida para 50% */
     margin: 30px auto; /* Centraliza o bloco horizontalmente */
     box-sizing: border-box; /* Inclui o padding no cálculo da largura */
