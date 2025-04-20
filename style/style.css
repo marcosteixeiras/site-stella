@@ -29,6 +29,13 @@ h1{
     color: white;
 }
 
+#tsl h3{
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 150;
+    font-size: 80px;
+    color: rgb(35, 35, 35);
+}
+
 h2{
     font-family: "Lexend Deca", sans-serif;
     font-weight: 150 !important;
@@ -230,6 +237,22 @@ text-align: center;
     height: 100vh;
 }
 
+.cta {
+    display: inline-block;
+    background-color: #0077aa;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 25px;
+    transition: background-color 0.3s;
+}
+
+.cta:hover {
+background-color: #005b80;
+}
+
 /* Responsividade para Tablets */
 @media (max-width: 768px) {
     .intro {
@@ -408,4 +431,14 @@ padding: 15px;
     #duvidas a{
         font-size: 16px !important;
     }
+}
+
+
+/* TSL */
+.tsl-block{
+    background: #fff7dc;
+    margin-top: 57px;
+    margin-bottom: 57px;
+    border-radius: 23px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.47);
 }
