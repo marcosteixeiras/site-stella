@@ -15,6 +15,8 @@
 
 body{
     overflow-x: hidden;
+    max-width: 100vw;
+    box-sizing: border-box;
 }
 
 b {
@@ -317,6 +319,8 @@ text-align: center;
 
 .container{
     width: 100% !important;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 
@@ -519,7 +523,8 @@ background-color: #005b80;
 
     .frst-photo {
         height: 300px; /* Altura menor para a foto */
-        width: 410px;
+        width: 100%;
+        max-width: 100%;
     }
     
     /* Ajuste do botão btn-ajuda em tablets */
@@ -546,6 +551,8 @@ background-color: #005b80;
 
     .frst-photo {
         height: 400px; /* Altura ainda menor para smartphones */
+        width: 100%;
+        max-width: 100%;
     }
 
     h1, h2, h3 {
@@ -621,7 +628,8 @@ background-color: #005b80;
 
     .scnd-photo {
         height: 200px; /* Altura menor para smartphones */
-        width: 410px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .text-about {
