@@ -1,3 +1,18 @@
+.col-md-3 {
+    flex: 0 0 auto;
+    width: 23% !important;
+}
+
+@media (min-width: 500px) {
+    .col-lg-3 {
+        flex: 0 0 auto;
+        width: 23% !important;
+        margin: 0 10px;
+        }
+}
+
+/* Removendo regra conflitante que afeta col-md-6 globalmente */
+
 body{
     overflow-x: hidden;
 }
@@ -6,6 +21,175 @@ b {
     font-weight: bold;
 }
 
+.subtitle{
+    margin-bottom: 60px;
+}
+
+/* Testimonial Carousel Styles */
+.testimonial-card {
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-image-placeholder {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    border: 3px solid #633030;
+}
+
+.testimonial-img {
+    max-height: 400px;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.testimonial-text {
+    font-style: italic;
+    color: #495057;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.testimonial-author {
+    color: #633030;
+    font-weight: bold;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+/* Carousel Controls */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background-color: #633030;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.8;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+    background-color: #633030;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-indicators button {
+    background-color: #633030;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.carousel-indicators button.active {
+    background-color: #633030;
+    opacity: 1;
+}
+
+/* WhatsApp Flutuante */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    animation: pulse 2s infinite;
+}
+
+.whatsapp-float a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float a:hover {
+    background-color: #128c7e;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-float i {
+    font-size: 30px;
+}
+
+/* Animação de pulso */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .testimonial-card {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .testimonial-image-placeholder {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .testimonial-text {
+        font-size: 0.9rem;
+    }
+    
+    .testimonial-author {
+        font-size: 1rem;
+    }
+    
+    .whatsapp-float {
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .whatsapp-float a {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .whatsapp-float i {
+        font-size: 25px;
+    }
+}
 
 #duvidas a{
     font-size: 20px;
@@ -25,7 +209,7 @@ b {
 h1{
     font-family: "Lexend Deca", sans-serif;
     font-weight: 150;
-    font-size: 80px;
+    font-size: 70px;
     color: white;
 }
 
@@ -65,7 +249,7 @@ p{
     margin-top: 25px;
     margin-bottom: 25px;
     font-family: "Lexend Deca", sans-serif;
-    font-weight: 300;
+    font-weight: 350;
 }
 
 .services .icon {
@@ -77,6 +261,51 @@ color: #007bff;
 background-color: #f8f9fa;
 padding: 40px;
 border-radius: 5px;
+}
+
+.ajuda{
+    margin-top: 50px;
+    padding: 30px 0;
+}
+
+.testimonial{
+    background-color: #633030;
+    margin-top: 50px;
+    padding: 30px 0;
+}
+
+.ajuda-items {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ajuda-items p {
+font-size: 1rem;
+margin-top: 15px;
+text-align: center;
+font-weight: 400;
+}
+
+.ajuda-icon {
+width: 50px;
+height: 50px;
+}
+
+.ajuda-items:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.ajuda-items p{
+    margin-top: 5px !important;
 }
 
 .footer {
@@ -107,8 +336,13 @@ text-align: center;
     margin: 60PX 0;
 }
 
+.ajuda{
+    margin:50px 0;
+}
+
+
 .duvidas {
-    background-color: #954b17;;
+    background-color: white;;
     /* height: 80vh; Altura padrão para telas maiores */
     width: 100%;
 }
@@ -204,6 +438,30 @@ text-align: center;
     background-color: #633030; /* Garante fundo transparente, se necessário */
 }
 
+.btn-ajuda {
+    border-width: 2px !important; /* Define a largura da borda */
+    border-style: solid; /* Adiciona estilo sólido para a borda */
+    border-color: transparent; /* Define a cor da borda */
+    border-radius: 40px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px; /* Adiciona espaçamento interno */
+    display: flex; /* Garante que a largura da borda funcione corretamente */
+    background-color: #169508; /* Garante fundo transparente, se necessário */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.ajuda-items-block{
+    background-color: #f5f5f5;
+    padding-top: 15px;
+    border: solid;
+    border-color: transparent;
+    border-radius: 15px;
+}
+
 .pilares{
     padding: 0 25px;
     margin-top: 25px;
@@ -229,14 +487,7 @@ text-align: center;
     text-align: left; /* Alinhamento padrão */
 }
 
-/* Imagem no outro lado */
-.frst-photo {
-    background-image: url('../img/ANC00877.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
+/* Removendo definição duplicada */
 
 .cta {
     display: inline-block;
