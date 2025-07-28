@@ -587,6 +587,13 @@ background-color: #005b80;
         max-width: 300px;
         margin: 0 auto;
     }
+    
+    /* Limitação da largura do mapa no mobile */
+    iframe {
+        max-width: 370px !important;
+        width: 100% !important;
+        height: auto !important;
+    }
 }
 
 
