@@ -15,6 +15,16 @@
 
 body{
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+html {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 b {
@@ -322,6 +332,14 @@ text-align: center;
 
 .container{
     width: 100% !important;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 
@@ -329,6 +347,9 @@ text-align: center;
     background-color: #633030;
     height: 100vh; /* Altura padrão para telas maiores */
     max-width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .about {
@@ -356,7 +377,7 @@ text-align: center;
     background-color: #344a51;
     color: white;
     padding: 30px 0 50px 0;
-    width: 101%;
+    width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -520,11 +541,13 @@ background-color: #005b80;
     .text-block {
         padding: 20px; /* Reduz padding */
         text-align: center; /* Centraliza o texto */
+        order: 2; /* Garante que o texto apareça depois da foto */
     }
 
     .frst-photo {
         height: 300px; /* Altura menor para a foto */
         width: 410px;
+        order: 1; /* Garante que a foto apareça primeiro */
     }
     
     /* Ajuste do botão btn-ajuda em tablets */
@@ -547,10 +570,20 @@ background-color: #005b80;
         padding: 10px; /* Ainda menos padding */
         text-align: center; /* Centraliza o texto */
         margin-bottom: 25px;
+        order: 2; /* Garante que o texto apareça depois da foto */
     }
 
     .frst-photo {
         height: 400px; /* Altura ainda menor para smartphones */
+        order: 1; /* Garante que a foto apareça primeiro */
+    }
+
+    /* Centraliza o botão na seção hero para mobile */
+    .intro .btn-ajuda {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        width: fit-content;
     }
 
     h1, h2, h3 {
@@ -572,7 +605,7 @@ background-color: #005b80;
         flex-direction: column;
     }
     #about .scnd-photo {
-    margin-top: 20px; /* Espaço entre o texto e a imagem */
+    margin-top: 0px; /* Espaço entre o texto e a imagem */
     }
     
     /* Correção do botão btn-ajuda no mobile */
@@ -613,11 +646,13 @@ background-color: #005b80;
 
     .scnd-photo {
         height: 300px; /* Altura reduzida para tablets */
+        order: 1; /* Garante que a foto apareça primeiro */
     }
 
     .text-about {
         padding: 20px; /* Reduz o espaçamento lateral */
         margin-top: 15px;
+        order: 2; /* Garante que o texto apareça depois da foto */
     }
 }
 
@@ -627,12 +662,14 @@ background-color: #005b80;
     .scnd-photo {
         height: 200px; /* Altura menor para smartphones */
         width: 410px;
+        order: 1; /* Garante que a foto apareça primeiro */
     }
 
     .text-about {
         padding: 10px; /* Reduz ainda mais o espaçamento lateral */
         text-align: left; /* Texto alinhado à esquerda para melhor leitura */
         font-size: 0.9rem; /* Reduz o tamanho da fonte */
+        order: 2; /* Garante que o texto apareça depois da foto */
     }
 
     h2, h3 {
