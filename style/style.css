@@ -369,17 +369,7 @@ padding: 20px 0;
 text-align: center;
 }
 
-.container{
-    width: 100% !important;
-    margin: 0;
-    padding: 0;
-}
-
-.row {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
+/* Removendo regras que estavam causando problemas no container */
 
 
 .intro {
