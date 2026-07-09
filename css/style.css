@@ -72,8 +72,8 @@
     .steps-info{display:flex;gap:3rem}
     .iitem{font-size:0.78rem;color:var(--bark);font-weight:300}
     .iitem strong{display:block;color:var(--earth);font-weight:500;font-size:0.82rem;margin-bottom:0.15rem}
-    #atmosfera{height:420px;position:relative;overflow:hidden}
-    #atmosfera img{width:100%;height:100%;object-fit:cover;object-position:center 55%;display:block}
+    #atmosfera{height:560px;position:relative;overflow:hidden}
+    #atmosfera img{width:100%;height:100%;object-fit:cover;object-position:center 60%;display:block}
     .atm-ov{position:absolute;inset:0;background:linear-gradient(to right,rgba(42,26,32,0.78) 0%,rgba(42,26,32,0.05) 65%);display:flex;align-items:center;padding:0 8vw}
     .atm-ov p{font-family:var(--serif);font-size:clamp(1.5rem,2.8vw,2.2rem);font-weight:300;font-style:italic;color:var(--cream);line-height:1.4;max-width:50ch}
     .atm-ov span{display:block;font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--stone);margin-top:1rem;font-family:var(--sans);font-style:normal}
@@ -109,7 +109,7 @@
     .fl{display:flex;gap:2rem}
     .fl a{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--stone);text-decoration:none;transition:color .2s}
     .fl a:hover{color:var(--cream)}
-    @media(max-width:768px){#hero,#sobre,#contato{grid-template-columns:1fr}.hero-image{min-height:380px}.hero-text{padding:4rem 6vw}.about-image{min-height:400px;order:-1}.recog-grid,.logo-grid,.faq-grid{grid-template-columns:1fr;gap:2.5rem}.steps{grid-template-columns:1fr 1fr}.tgrid{grid-template-columns:1fr}.test.feat{grid-row:span 1}.steps-bottom{flex-direction:column;gap:1.5rem;align-items:flex-start}.steps-info{flex-wrap:wrap;gap:1.5rem}nav ul{display:none}#atmosfera{height:300px}}
+    @media(max-width:768px){#hero,#sobre,#contato{grid-template-columns:1fr}.hero-image{min-height:380px}.hero-text{padding:4rem 6vw}.about-image{min-height:400px;order:-1}.recog-grid,.logo-grid,.faq-grid{grid-template-columns:1fr;gap:2.5rem}.steps{grid-template-columns:1fr 1fr}.tgrid{grid-template-columns:1fr}.test.feat{grid-row:span 1}.steps-bottom{flex-direction:column;gap:1.5rem;align-items:flex-start}.steps-info{flex-wrap:wrap;gap:1.5rem}nav ul{display:none}#atmosfera{height:340px}}
 
 /* ===== Menu mobile (hamburguer) ===== */
 .nav-toggle{display:none;background:none;border:0;cursor:pointer;padding:0.5rem;margin-left:1rem}
